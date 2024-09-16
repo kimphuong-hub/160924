@@ -1,0 +1,18 @@
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.themed-component.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.themed-component.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  margin-top: 20px;
+}

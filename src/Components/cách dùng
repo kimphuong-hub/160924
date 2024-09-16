@@ -1,0 +1,28 @@
+
+useContext: dùng để truy cập vào giá trị của một context mà không cần phải truyền props qua nhiều lớp component. 
+<!-- Khi sd useContext, dễ dàng lấy giá trị từ một context đã đc tạo ra bằng React.createContext, và sử dụng giá trị đó trong component của bạn mà không cần phải truyền giá trị qua props -->
+cách sd useContext :
+Tạo context bằng React.createContext().
+Cung cấp value context với Context.Provider.
+Sử dụng useContext để lấy giá trị context trong các component.
+
+
+useref: dùng để Lưu trữ giá trị,truy cập DOM,lưu trữ trạng thái khi render 
+cách dùng 
+Khởi tạo ref: 
+Gọi useRef(initialValue) để tạo một ref object. 
+<!--  initialValue là giá trị khởi tạo cho ref, thường là null. -->
+Gán ref cho phần tử DOM.
+Truy cập giá trị ref
+
+useImperativeHandle: đc dùng để điều chỉnh cách mà một ref từ component cha có thể tương tác với component con. 
+cách dùng: 
+Component Con: Sử dụng forwardRef để nhận ref, Sử dụng useImperativeHandle để định nghĩa các phương thức hoặc thuộc tính đc expose ra ngoài.
+Component Cha: Tạo và sử dụng ref để tương tác với component con qua các phương thức hoặc thuộc tính đã đc expose.
+
+Debounce: Thực hiện hàm sau khi không có sự kiện mới xảy ra trong một khoảng thời gian trì hoãn.
+sd: cài đặt npm install lodash.debounce
+Vd: tìm kiếm tự động, thay đổi kích thước cửa sổ.
+Throttle:Thực hiện hàm tối đa một lần trong khoảng thời gian đã định kỳ, dù có bao nhiêu sự kiện xảy ra
+sd:npm install lodash.throttle
+ Vd: sự kiện cuộn chuột, vị trí của chuột.
